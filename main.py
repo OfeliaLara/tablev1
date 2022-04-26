@@ -60,8 +60,8 @@ def SanrioCharacterSurvey():
     print("That's not an option, you silly goose!")
 
 SanrioCharacterSurvey()
-'''
 
+'''
 
 '''
 from tabulate import tabulate
@@ -156,10 +156,13 @@ IceCream = input("Pick an Ice Cream Flavor: Chocolate, Strawberry or Vanilla? ")
 print(IceCream )
 if IceCream.lower()== "chocolate":
     order.append("chocolate")
-    total = 2.11
+    total = 1.55
 
 elif IceCream.lower()== "strawberry":
     order.append("strawberry")
-    total = 3.55
+    total = 1.55
 elif IceCream.lower()== "vanilla":
     order.append("vanilla")
+    total = 1.55
+
+print("That will be $", total, ".")
