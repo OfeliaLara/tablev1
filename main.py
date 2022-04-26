@@ -65,8 +65,7 @@ SanrioCharacterSurvey()
 
 '''
 from tabulate import tabulate
-print(tabulate([["1. Fettuccine Alfredo", "  $16.99", "4. Zuppa Toscana", "  $7.99", "7. Fountain Drinks", "$2.11", "Chocolate"], ["2. Chicken Alfredo", "$20.99", "5. Chicken Gnocchi", "  $8.99", "8. Sweet Ice Tea", "$3.55", "Strawberry"], ["3. Shrimp Scampi", "$21.99", "6. Pasta e Fagioli", "$9.99", "9. Regular Lemonade", "$3.99", "Vanilla"]],   ["Pasta" , "  $", "Soups" , "  $", "Drinks", "  $", "Ice Cream", "$" ], "fancy_grid"))
-
+print(tabulate([["1. Fettuccine Alfredo", "  $16.99", "4. Zuppa Toscana", "  $7.99", "7. Fountain Drinks", "$2.11", "10. Chocolate", "$1.55", ], ["2. Chicken Alfredo", "$17.35", "5. Chicken Gnocchi", "  $8.99", "8. Sweet Ice Tea", "$3.55", "11. Strawberry", "$1.55"], ["3. Shrimp Scampi", "$18.59", "6. Pasta e Fagioli", "$9.99", "9. Regular Lemonade", "$3.99", "12. Vanilla", "$1.55"]],   ["Pasta" , "  $", "Soups" , "  $", "Drinks", "  $", "Ice Cream", "$ per scoop" ], "fancy_grid")) 
 from tabulate import tabulate
 IceCream = "Chocolate"
 scoopsPrice = 1.55
@@ -85,15 +84,15 @@ table = [[int (scoopsCount), "Ice Cream","${:0.2f}".format (scoopsPrice)+ " per 
 headers= ["Number", "Item", "Price"]
 print("\n")
 print (tabulate(table, headers))
+
 '''
 
 
 
 
 
-
 from tabulate import tabulate
-print(tabulate([["1. Fettuccine Alfredo", "  $16.99", "4. Zuppa Toscana", "  $7.99", "7. Fountain Drinks", "$2.11", "10. Chocolate", "$1.55"], ["2. Chicken Alfredo", "$17.35", "5. Chicken Gnocchi", "  $8.99", "8. Sweet Ice Tea", "$3.55", "11. Strawberry", "$1.55"], ["3. Shrimp Scampi", "$18.59", "6. Pasta e Fagioli", "$9.99", "9. Regular Lemonade", "$3.99", "12. Vanilla", "$1.55"]],   ["Pasta" , "  $", "Soups" , "  $", "Drinks", "  $", "Ice Cream", "$ per scoop" ], "fancy_grid")) 
+print(tabulate([["1. Fettuccine Alfredo", "  $16.99", "4. Zuppa Toscana", "  $7.99", "7. Fountain Drinks", "$2.11", "10. Chocolate", "$1.55", ], ["2. Chicken Alfredo", "$17.35", "5. Chicken Gnocchi", "  $8.99", "8. Sweet Ice Tea", "$3.55", "11. Strawberry", "$1.55"], ["3. Shrimp Scampi", "$18.59", "6. Pasta e Fagioli", "$9.99", "9. Regular Lemonade", "$3.99", "12. Vanilla", "$1.55"]],   ["Pasta" , "  $", "Soups" , "  $", "Drinks", "  $", "Ice Cream", "$ per scoop" ], "fancy_grid")) 
 
 total=0 
 order=[]
